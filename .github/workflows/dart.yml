@@ -18,6 +18,6 @@ jobs:
 
       - name: Install dependencies
         working-directory: ./tachiflu
-        run: flutter pub get
+        run: dart pub get
 
 
