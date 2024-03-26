@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tachiflu/routes/route_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,15 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('hello tachiflu'),
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: definedRoutes,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
