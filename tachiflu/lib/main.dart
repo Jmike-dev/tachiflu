@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:tachiflu/routes/route_config.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Tachiflu());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Tachiflu extends StatelessWidget {
+  const Tachiflu({super.key});
 
   @override
   Widget build(BuildContext context) {
