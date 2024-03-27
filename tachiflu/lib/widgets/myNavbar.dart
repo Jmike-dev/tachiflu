@@ -15,11 +15,11 @@ class MyNavbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(' whole page rebuild');
     return Scaffold(
       body: navigationShell,
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.black,
-        
         // height: ,
         selectedIndex: navigationShell.currentIndex,
         destinations: const [

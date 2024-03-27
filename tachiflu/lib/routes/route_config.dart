@@ -34,7 +34,6 @@ final definedRoutes = GoRouter(
         StatefulShellBranch(
           navigatorKey: shellNavigatorBKey,
           routes: [
-            // top route inside branch
             GoRoute(
               path: '/recent',
               name: RouteNames.recent,
@@ -47,7 +46,6 @@ final definedRoutes = GoRouter(
         StatefulShellBranch(
           navigatorKey: shellNavigatorCKey,
           routes: [
-            // top route inside branch
             GoRoute(
               path: '/search',
               name: RouteNames.search,
