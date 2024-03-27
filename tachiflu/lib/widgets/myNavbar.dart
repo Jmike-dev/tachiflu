@@ -18,6 +18,9 @@ class MyNavbar extends StatelessWidget {
     return Scaffold(
       body: navigationShell,
       bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.black,
+        
+        // height: ,
         selectedIndex: navigationShell.currentIndex,
         destinations: const [
           NavigationDestination(
