@@ -15,6 +15,7 @@ class MyNavbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(' whole page rebuild');
     return Scaffold(
       body: navigationShell,
       bottomNavigationBar: NavigationBar(
@@ -25,6 +26,10 @@ class MyNavbar extends StatelessWidget {
           NavigationDestination(
             label: 'Library',
             icon: Icon(Icons.collections_bookmark_outlined),
+          ),
+          NavigationDestination(
+            label: 'downloads',
+            icon: Icon(Icons.download),
           ),
           NavigationDestination(
             label: 'recent',
