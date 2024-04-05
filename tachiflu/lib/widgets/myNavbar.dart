@@ -28,6 +28,10 @@ class MyNavbar extends StatelessWidget {
             icon: Icon(Icons.collections_bookmark_outlined),
           ),
           NavigationDestination(
+            label: 'downloads',
+            icon: Icon(Icons.download),
+          ),
+          NavigationDestination(
             label: 'recent',
             icon: Icon(Icons.timelapse_rounded),
           ),

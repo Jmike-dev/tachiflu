@@ -5,9 +5,10 @@ class DownloadScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('download screen'),
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('download screen'),
+      ),
     );
   }
 }
