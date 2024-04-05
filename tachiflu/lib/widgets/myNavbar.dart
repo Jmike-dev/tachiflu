@@ -19,7 +19,6 @@ class MyNavbar extends StatelessWidget {
       body: navigationShell,
       bottomNavigationBar: NavigationBar(
         backgroundColor: Colors.black,
-        
         // height: ,
         selectedIndex: navigationShell.currentIndex,
         destinations: const [
