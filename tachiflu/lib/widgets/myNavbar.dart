@@ -1,46 +1,59 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
 
-class MyNavbar extends StatelessWidget {
+class MyNavbar extends StatefulWidget {
   const MyNavbar({required this.navigationShell, super.key});
 
   final StatefulNavigationShell navigationShell;
 
+  @override
+  State<MyNavbar> createState() => _MyNavbarState();
+}
+
+class _MyNavbarState extends State<MyNavbar> {
+  int selectedIndex = 0;
+
   void theGoBranch(int index) {
-    navigationShell.goBranch(
+    widget.navigationShell.goBranch(
       index,
-      initialLocation: index == navigationShell.currentIndex,
+      initialLocation: index == widget.navigationShell.currentIndex,
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    print(' whole page rebuild');
     return Scaffold(
-      body: navigationShell,
-      bottomNavigationBar: NavigationBar(
+      body: widget.navigationShell,
+      bottomNavigationBar: SlidingClippedNavBar(
+        onButtonPressed: (index) {
+          setState(() {
+            selectedIndex = index;
+          });
+          theGoBranch(selectedIndex);
+        },
         backgroundColor: Colors.black,
-        // height: ,
-        selectedIndex: navigationShell.currentIndex,
-        destinations: const [
-          NavigationDestination(
-            label: 'Library',
-            icon: Icon(Icons.collections_bookmark_outlined),
+        activeColor: Colors.blue,
+        iconSize: 30,
+        selectedIndex: selectedIndex,
+        barItems: [
+          BarItem(
+            title: 'Library',
+            icon: Icons.collections_bookmark_outlined,
           ),
-          NavigationDestination(
-            label: 'downloads',
-            icon: Icon(Icons.download),
+          BarItem(
+            title: 'downloads',
+            icon: Icons.download,
           ),
-          NavigationDestination(
-            label: 'recent',
-            icon: Icon(Icons.timelapse_rounded),
+          BarItem(
+            title: 'recent',
+            icon: Icons.timelapse_rounded,
           ),
-          NavigationDestination(
-            label: 'search',
-            icon: Icon(Icons.search),
+          BarItem(
+            title: 'Search',
+            icon: Icons.search,
           ),
         ],
-        onDestinationSelected: theGoBranch,
       ),
     );
   }
