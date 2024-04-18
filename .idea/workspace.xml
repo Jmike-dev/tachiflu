@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc9447cf-96cc-4a9e-8626-9b78f96e9991" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tachiflu/lib/widgets/myNavbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/tachiflu/lib/widgets/myNavbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tachiflu/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/tachiflu/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tachiflu/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tachiflu/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
