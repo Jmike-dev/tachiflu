@@ -5,7 +5,7 @@ import 'package:tachiflu/screens/download/download_screen.dart';
 import 'package:tachiflu/screens/library/library_screen.dart';
 import 'package:tachiflu/screens/recents/recents_screen.dart';
 import 'package:tachiflu/screens/search/search_screen.dart';
-import 'package:tachiflu/widgets/myNavbar.dart';
+import 'package:tachiflu/widgets/my_navbar.dart';
 
 final rootNavigatorKey = GlobalKey<NavigatorState>();
 final shellNavigatorAKey = GlobalKey<NavigatorState>(debugLabel: 'shellA');
